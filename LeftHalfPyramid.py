@@ -9,7 +9,7 @@ for i in range(1,n):
     x-=1
     temp=k
     while temp>0:
-        print("* ",end=" ")
+        print("*",end=" ")
         temp-=1
     k+=1
     print("\n")
