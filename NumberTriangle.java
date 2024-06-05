@@ -1,20 +1,25 @@
-n=int(input())
-row=n
-column=(n*2)-1
-k=n-1
-x=1
-y=1
-count=1
-for i in range(1,n+1):
-    temp=k
-    while temp>0:
-        print("",end=" ")
-        temp-=1
-    dummy=y
-    while dummy>0:
-        print(count,end=" ")
-        dummy-=1
-    k-=1
-    y+=1
-    count+=1
-    print()
+/**
+ * NumberTriangle
+ */
+import java.util.*;
+public class NumberTriangle {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number of rows:");
+        int n=sc.nextInt();
+        int k=n,count=1;
+        for(int i=1;i<=n;i++)
+        {
+            for(int j=1;j<=k-1;j++)
+            {
+                System.out.print(" ");
+            }
+            for(int x=1;x<=count;x++)
+            System.out.print(i+" ");
+            count++;
+            k--;
+            System.out.println();
+        }
+    }
+}
